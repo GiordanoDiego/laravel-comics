@@ -1,20 +1,105 @@
 @import "~bootstrap/scss/bootstrap";
+$blu_dc: rgb(0, 129, 250);
 
-header{
-    border: 1px dashed red;
-    .container{
-        border: 2px dashed green;
-            
-        }
+a{
+    text-decoration: none;
+    color: black;
 }
-main {
-    border: 1px dashed red;
-    .container{
-    border: 2px dashed green;
+ul{
+    list-style:  none;
+}
+// header
+header{
+
+    .top-header{
+        background-color: $blu_dc;
+        color: white;
+    }
+    .bottom-header{
+        img{
+            height: 80px;
+        }
+        ul{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                font-weight: bold;
+            }
+        }
+
+     
         
     }
 }
 
+
+// main
+main {
+    .section{
+    border: 1px dashed green;   
+    }
+
+    .section1{
+        background-image: url('./img/jumbotron.jpg');
+        min-height: 400px;
+    }
+
+    .section2{
+       
+        button{
+            background-color: $blu_dc;
+            color: white;
+            padding: 8px 20px;
+            font-weight: 600;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 100px;
+
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .section3{
+        background-color: rgb(28, 28, 28);
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+
+        .button-container-load{
+            text-align: center;
+            button{
+                background-color: $blu_dc;
+                color: white;
+                padding: 8px 20px;
+                font-weight: 600;
+                border: none;
+                
+            }
+        }
+        
+    }
+
+    .section4{
+        background-color: $blu_dc;
+        color: white;
+        .ico_container{
+            padding: 15px;
+            height: 100px;
+            img{
+                height: 100%;
+            }
+
+        }
+    }
+}
+
+
+
+// footer
 footer{
     border: 1px dashed red;
     .container{
