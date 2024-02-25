@@ -8,7 +8,6 @@
         "Videos",
         "News"
     );
-    
     $linksShop = array(
         "Shop DC",
         "Shop DC Collectibles",
@@ -28,7 +27,6 @@
         "Contact Us",
         "Shop DC Collectibles"
     );
-
     $linksSites = array(
         "DC",
         "MAD Magazine",
@@ -36,6 +34,8 @@
         "DC Universe",
         "DC Power Visa"
     );
+
+    
 
 
 @endphp

@@ -1,3 +1,6 @@
+@php
+    // var_dump($configArray) ;    
+@endphp
 
 <main>
     <section class="section1">
@@ -29,10 +32,17 @@
 
     <section class="section3">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    ciao
-                </div>
+            <div class="row flex-wrap  justify-content-between ">
+                @foreach ($configArray as $item)
+                    <div class="col-2 thumb_container mt-5 mb-5 ">
+                        <div class="">
+                            <img src="{{$item['thumb']}}" alt="{{$item['title']}}">
+                        </div>
+                        <div>
+                            {{$item['title']}}
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
         <div class="container">
