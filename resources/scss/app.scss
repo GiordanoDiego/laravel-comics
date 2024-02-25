@@ -8,6 +8,16 @@ a{
 ul{
     list-style:  none;
 }
+
+
+.color_dc_blue{
+    color: $blu_dc;
+}
+
+.color_gray{
+    color: rgb(122, 122, 122);
+}
+
 // header
 header{
 
@@ -101,11 +111,41 @@ main {
 
 // footer
 footer{
-    border: 1px dashed red;
-    .container{
-        border: 2px dashed green;
+  
+    
+    .footer_bottom{
+        background-color: rgb(48, 48, 48);
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        button{
+            border: 2px solid $blu_dc;
+            background-color: rgb(48, 48, 48);
+            color: white;
+            padding: 8px 15px;
+        }
+    }
+    
+    .footer_top{
+        
+        background-image: url("./img/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-size: cover;
+        color: white;
+
+        
+        .logo-dc-container{
+            height: 100%;
+            background-image: url("./img/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 90%;
             
         }
+    }
+
 }
 
 
